@@ -1,4 +1,3 @@
-![scaning](https://github.com/user-attachments/assets/b1db7903-4b15-4b21-8e9b-0ef533aa9876)# Hyderabad-Red-Line-Metro-Ticketing-System
 This Django-based web app generates QR code tickets for metro travel. Users select departure and destination stations, receive a QR code via email, and scan it using OpenCV for station validation. If scanned at the wrong station, the system notifies the user. Built with Python, Django, OpenCV, and SQLite, it enhances metro travel convenience.
 
 # Phase 1: User Options & Navigation
