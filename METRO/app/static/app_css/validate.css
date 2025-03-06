@@ -1,0 +1,35 @@
+#entry_sec,#exit_sec{
+    height: 30vh;
+    width: 30vw;
+    position: absolute;
+    box-shadow: 0px 4px 8px rgb(149, 135, 126);
+    border-radius: 15px;
+    background-image: url('../app_images/entry.jpg');
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+#entry_sec{
+    left: 5vw;
+    top: 35vh;
+}
+#exit_sec{
+    left: 55vw;
+    top: 36vh;
+}
+#entry_text,#exit_text{
+    position: absolute;
+    top: 20px;
+    left: 9vw;
+    color: rgb(13, 91, 91);
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+#entry_sec:hover{
+    transform: scale(1.03);
+}
+#exit_sec:hover{
+    transform: scale(1.03);
+}

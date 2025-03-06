@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section id="booking_form">
+    <form action="" method="post" id="book_form">
+        <h2>BOOKIG TICKET</h2>
+        {% csrf_token %}
+        <div>
+            <b>From: </b>
+            <select name="from" id="from" required >
+                <option value="" disabled>Select the station</option>
+                {% for i in stations %}
+                <option value="{{i}}">{{i}}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div>
+            <b>To: </b>&nbsp;
+            <select name="to" id="to" required >
+                <option value="" disabled>Select the station</option>
+                {% for i in stations %}
+                <option value="{{i}}">{{i}}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div>
+            <b>Mail:</b> <input type="text" name="mail" placeholder=" Enter your valid mail.." required>
+        </div>
+        <button type="submit">BOOK TICKET</button>
+    </form>
+</section>
+
+<script>
+const to = document.getElementById('to');
+const from = document.getElementById('from');
+const form = document.getElementById('book_form');
+
+
+form.addEventListener('submit',(e)=>{
+    console.log(to.value, from.value);
+    if (to.value == from.value){
+        e.preventDefault()
+        alert('destination and initial station should not be same...')
+    }
+});
+
+</script>
+{% endblock content %}

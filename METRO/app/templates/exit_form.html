@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<form action="" method="post" id="entry_form">
+    {% csrf_token %}
+    <h1>ENJOY THE JOURNEY</h1>
+    <div><b>From: </b>
+        <select name="exit_station">
+        {% for i in stations %}
+            <option value="{{i.station}}">{{i.station}}</option>
+        {% endfor %}
+        </select></div>
+    <div><button type="submit">SCAN</button></div>
+    <div><marquee>{{result}}</marquee></div>
+</form>
+{% endblock content %}

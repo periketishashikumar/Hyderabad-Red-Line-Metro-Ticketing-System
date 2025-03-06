@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<a href="{% url 'travel' %}" id="booking_a">
+    <section id="booking_section">
+        <h1>TRAVEL</h1>
+        </section>
+</a>
+<a href="{% url 'validate' %}" id="validation_a">
+    <section id="validation_section">
+        <h1>VALIDATE</h1>
+    </section>
+</a>
+
+<script>
+    
+var booking_a = document.querySelector('#booking_a');
+var validating_a = document.querySelector('#validation_a');
+(()=>{
+    setTimeout(()=>{
+        this.booking_a.style.visibility = 'visible';
+        this.booking_a.style.opacity = 1;
+        
+        validating_a.style.visibility = 'visible';
+        validating_a.style.opacity = 1;
+    },3000);
+})();
+
+
+</script>
+{% endblock content %}

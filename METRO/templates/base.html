@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'app_css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'app_css/travel.css' %}">
+    <link rel="stylesheet" href="{% static 'app_css/validate.css' %}">
+    <link rel="stylesheet" href="{% static 'app_css/entry_form.css' %}">
+</head>
+<body style="overflow-x: none;">
+    <header id="base_nav">
+        <nav>
+            <ol id="components">
+                <li><a href="#"><img src="https://www.ltmetro.com/wp-content/uploads/2020/06/logo-1-1-1.png" alt="" id="logo"></a></li>
+                <li><a href="{% url 'index' %}">HOME</a> </li>
+                <li><a href="{% url 'travel' %}">TRAVEL</a></li>
+                <li id="customer_service"><a href="{% url 'validate' %}">VALIDATE</a></li>
+                <li id="guide"><a href="#">GUIDE</a></li>
+                <li><a href="#">ABOUT US</a></li>
+            </ol>
+        </nav>
+    </header>
+
+
+    <figure id="bg_img">
+        <img src="{% static 'images/metro.jpg' %}" alt="">
+    </figure>
+    
+    <section id="hide">
+
+    </section>
+{% block content %}
+{% endblock content %}
+
+
+    <script src="{% static 'js/base.js' %}"></script>
+    <script src="{% static 'app_js/index.js' %}"></script>
+</body>
+</html>

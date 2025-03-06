@@ -1,0 +1,43 @@
+#entry_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    border-radius: 15px;
+    box-shadow: 0px 8px 4px rgb(72, 70, 70);
+    top: 30vh;
+    left: 30vw;
+    height: 40vh;
+    width: 40vw;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#entry_form select{
+    height: 35px;
+    width: 250px;
+    border-radius: 15px;
+
+}
+#entry_form b{
+    font-size: x-large;
+    color: #fff;
+}
+#entry_form button{
+    height: 25px;
+    width: 150px;
+    border-radius: 15px;
+    background-color: rgb(158, 188, 99);
+    box-shadow: 2px 4px  4px rgb(163, 211, 230);
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+#entry_form button:hover{
+    transform: translateY(-4px);
+}
+
+#entry_form marquee{
+    color: greenyellow;
+    font-size: xx-large;
+}

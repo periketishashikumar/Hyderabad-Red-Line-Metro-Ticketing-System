@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<a href="{% url 'entry_form' %}">
+    <section id="entry_sec">
+        <h1 id="entry_text">ENTRY SCAN</h1>
+        </section>
+</a>
+<a href="{% url 'exit_form' %}">
+    <section id="exit_sec">
+        <h1 id="exit_text">EXIT SCAN</h1>
+        </section>
+</a>
+{% endblock content %}
